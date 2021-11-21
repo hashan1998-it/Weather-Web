@@ -1,0 +1,103 @@
+/* Poppins google fornt  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #43affc;
+}
+.wrapper{
+    background-color: #fff;
+    width: 400px;
+    border-radius: 7px;
+}
+.wrapper header{
+    font-weight: 500;
+    color: #43affc;
+    font-size: 21px;
+    padding: 16px 15px;
+    border-bottom: 1px solid #bfbfbf;
+    display: flex;
+    align-items: center;
+    
+}
+header i{
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 8px;
+}
+.wrapper .input-part {
+    display: none;
+    margin: 20px 25px 30px;
+}
+.input-part :where(input,button){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-size: 18px;
+    
+}
+.input-part .info-txt{
+    display: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.input-part .info-txt.error{
+    display: block;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    
+}.input-part .info-txt.pending{
+    display: block;
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+    
+}
+.input-part input{
+    text-align: center;
+    border: 1px solid #bfbfbf;
+
+}
+.input-part input:is(:focus,:valid){
+    border: 2px solid #43affc;
+}
+.input-part .separator{
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.separator::before{
+    content: "or";
+    background: #fff;
+    color: #ccc;
+    padding: 0px 15px;
+    font-size: 19px;
+
+}
+
+.input-part button{
+    color: #fff;
+    cursor: pointer;
+    background-color: #43affc;
+}
